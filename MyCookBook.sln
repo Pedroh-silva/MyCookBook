@@ -3,12 +3,85 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BDBDCA35-8F94-4991-BC79-AB168E70E384}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{53C3373B-8322-46F7-8302-7EB68D0C436A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backend", "Backend", "{826A18D0-7C7D-4BD2-81FF-B6362C7E3240}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{EC511931-D9FD-4642-8015-07EAC4EF7580}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCookBook.Communication", "src\Shared\MyCookBook.Communication\MyCookBook.Communication.csproj", "{A54AA200-DD0A-45A7-A4E5-7F9DDCD1A859}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCookBook.Exceptions", "src\Shared\MyCookBook.Exceptions\MyCookBook.Exceptions.csproj", "{28D68A37-BFAF-4B76-AB57-D95FD1BB65DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCookBook.Application", "src\Backend\MyCookBook.Application\MyCookBook.Application.csproj", "{F1DA3E2B-1D46-4F38-AD16-3AFBF157B076}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCookBook.Domain", "src\Backend\MyCookBook.Domain\MyCookBook.Domain.csproj", "{38D49E20-0A95-49E0-ABC3-E647812C3057}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCookBook.Infrastructure", "src\Backend\MyCookBook.Infrastructure\MyCookBook.Infrastructure.csproj", "{1C481599-4847-423E-899A-61306B5EFE21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCookBook.API", "src\Backend\MyCookBook.API\MyCookBook.API.csproj", "{843A7B90-6F31-4A30-96DF-4036E5C2E34F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validators.Test", "tests\Validators.Test\Validators.Test.csproj", "{9F8DE640-57F1-4EA9-A9C3-16168BAF6E75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseCases.Test", "tests\UseCases.Test\UseCases.Test.csproj", "{FD376B63-CF06-4FF6-B7F8-629B313AD67F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A54AA200-DD0A-45A7-A4E5-7F9DDCD1A859}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A54AA200-DD0A-45A7-A4E5-7F9DDCD1A859}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A54AA200-DD0A-45A7-A4E5-7F9DDCD1A859}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A54AA200-DD0A-45A7-A4E5-7F9DDCD1A859}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28D68A37-BFAF-4B76-AB57-D95FD1BB65DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28D68A37-BFAF-4B76-AB57-D95FD1BB65DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28D68A37-BFAF-4B76-AB57-D95FD1BB65DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28D68A37-BFAF-4B76-AB57-D95FD1BB65DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1DA3E2B-1D46-4F38-AD16-3AFBF157B076}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1DA3E2B-1D46-4F38-AD16-3AFBF157B076}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1DA3E2B-1D46-4F38-AD16-3AFBF157B076}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1DA3E2B-1D46-4F38-AD16-3AFBF157B076}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38D49E20-0A95-49E0-ABC3-E647812C3057}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38D49E20-0A95-49E0-ABC3-E647812C3057}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38D49E20-0A95-49E0-ABC3-E647812C3057}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38D49E20-0A95-49E0-ABC3-E647812C3057}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C481599-4847-423E-899A-61306B5EFE21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C481599-4847-423E-899A-61306B5EFE21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C481599-4847-423E-899A-61306B5EFE21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C481599-4847-423E-899A-61306B5EFE21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{843A7B90-6F31-4A30-96DF-4036E5C2E34F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{843A7B90-6F31-4A30-96DF-4036E5C2E34F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{843A7B90-6F31-4A30-96DF-4036E5C2E34F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{843A7B90-6F31-4A30-96DF-4036E5C2E34F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F8DE640-57F1-4EA9-A9C3-16168BAF6E75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F8DE640-57F1-4EA9-A9C3-16168BAF6E75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F8DE640-57F1-4EA9-A9C3-16168BAF6E75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F8DE640-57F1-4EA9-A9C3-16168BAF6E75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD376B63-CF06-4FF6-B7F8-629B313AD67F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD376B63-CF06-4FF6-B7F8-629B313AD67F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD376B63-CF06-4FF6-B7F8-629B313AD67F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD376B63-CF06-4FF6-B7F8-629B313AD67F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{826A18D0-7C7D-4BD2-81FF-B6362C7E3240} = {BDBDCA35-8F94-4991-BC79-AB168E70E384}
+		{EC511931-D9FD-4642-8015-07EAC4EF7580} = {BDBDCA35-8F94-4991-BC79-AB168E70E384}
+		{A54AA200-DD0A-45A7-A4E5-7F9DDCD1A859} = {EC511931-D9FD-4642-8015-07EAC4EF7580}
+		{28D68A37-BFAF-4B76-AB57-D95FD1BB65DF} = {EC511931-D9FD-4642-8015-07EAC4EF7580}
+		{F1DA3E2B-1D46-4F38-AD16-3AFBF157B076} = {826A18D0-7C7D-4BD2-81FF-B6362C7E3240}
+		{38D49E20-0A95-49E0-ABC3-E647812C3057} = {826A18D0-7C7D-4BD2-81FF-B6362C7E3240}
+		{1C481599-4847-423E-899A-61306B5EFE21} = {826A18D0-7C7D-4BD2-81FF-B6362C7E3240}
+		{843A7B90-6F31-4A30-96DF-4036E5C2E34F} = {826A18D0-7C7D-4BD2-81FF-B6362C7E3240}
+		{9F8DE640-57F1-4EA9-A9C3-16168BAF6E75} = {53C3373B-8322-46F7-8302-7EB68D0C436A}
+		{FD376B63-CF06-4FF6-B7F8-629B313AD67F} = {53C3373B-8322-46F7-8302-7EB68D0C436A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0609857-35F9-422D-993C-78BA93461ECC}
 	EndGlobalSection
 EndGlobal
