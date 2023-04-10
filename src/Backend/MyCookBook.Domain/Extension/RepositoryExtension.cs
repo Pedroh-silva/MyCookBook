@@ -14,4 +14,11 @@ public static class RepositoryExtension
 		var connection = configuration.GetConnectionString("connection");
 		return connection;
 	}
+	public static string GenerateConnectionString(this IConfiguration configuration)
+	{
+		var dataBaseName = configuration.GetConnectionString("DatabaseName");
+		var connection = configuration.GetConnectionString("connection");
+
+		return $"{connection}Database={dataBaseName}";
+	}
 }
